@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A36",
+    "price": "Rs. 84,999",
+    "rating": "★★★★★",
+    "image": "images/a36.jpg",
+    "link": "https://your-affiliate-link.com"
+  },
+  {
+    "id": 2,
+    "name": "Redmi Note 14",
+    "price": "Rs. 54,999",
+    "rating": "★★★★☆",
+    "image": "images/redmi14.jpg",
+    "link": "https://your-affiliate-link.com"
+  },
+  {
+    "id": 3,
+    "name": "Anker Power Bank 20000mAh",
+    "price": "Rs. 6,999",
+    "rating": "★★★★★",
+    "image": "images/powerbank.jpg",
+    "link": "https://your-affiliate-link.com"
+  },
+  {
+    "id": 4,
+    "name": "Mibro Smart Watch",
+    "price": "Rs. 8,999",
+    "rating": "★★★★☆",
+    "image": "images/watch.jpg",
+    "link": "https://your-affiliate-link.com"
+  },
+  {
+    "id": 5,
+    "name": "Wireless Earbuds",
+    "price": "Rs. 3,499",
+    "rating": "★★★★★",
+    "image": "images/earbuds.jpg",
+    "link": "https://your-affiliate-link.com"
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Speaker",
+    "price": "Rs. 4,999",
+    "rating": "★★★★☆",
+    "image": "images/speaker.jpg",
+    "link": "https://your-affiliate-link.com"
+  },
+  {
+    "id": 7,
+    "name": "Gaming Mouse",
+    "price": "Rs. 2,299",
+    "rating": "★★★★★",
+    "image": "images/mouse.jpg",
+    "link": "https://your-affiliate-link.com"
+  },
+  {
+    "id": 8,
+    "name": "Fast Charger 33W",
+    "price": "Rs. 1,999",
+    "rating": "★★★★☆",
+    "image": "images/charger.jpg",
+    "link": "https://your-affiliate-link.com"
+  }
+]
