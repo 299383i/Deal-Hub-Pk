@@ -13,62 +13,41 @@ let allProducts = [];
 /* ==========================================
    HERO SLIDER
 ========================================== */
-
 const heroSlides = [
 
 {
 title:"Samsung Galaxy A07",
-text:"Latest Samsung smartphone with PTA approval and amazing value for money.",
-image:"images/samsung-a07.jpg"
-},
-
-{
-title:"Wireless Microphone",
-text:"Perfect for YouTube, Podcasts, Interviews and Live Streaming.",
-image:"images/wireless-mic.jpg"
+text:"PTA Approved • 6GB RAM • 128GB Storage",
+image:"images/hero-5.jpg"
 },
 
 {
 title:"M10 Wireless Earbuds",
-text:"Crystal clear sound with long battery life and premium design.",
-image:"images/m10-earbuds.jpg"
+text:"Bluetooth 5.1 • Hi-Res Audio • Long Battery",
+image:"images/hero-1.jpg"
 },
 
 {
 title:"Portable Mist Fan",
-text:"Stay cool anywhere with USB powered portable air cooler.",
-image:"images/mist-fan.jpg"
+text:"USB Powered • Mist Spray • RGB Lights",
+image:"images/hero-2.jpg"
+},
+
+{
+title:"60W Fast Charging Cable Set",
+text:"Type-C • Lightning • Micro USB",
+image:"images/hero-3.jpg"
+},
+
+{
+title:"24-in-1 Screwdriver Kit",
+text:"Professional Repair Toolkit",
+image:"images/hero-4.jpg"
 }
 
 ];
 
-let currentSlide=0;
 
-const heroTitle=document.getElementById("heroTitle");
-const heroText=document.getElementById("heroText");
-const heroImage=document.getElementById("heroImage");
-
-function changeHero(){
-
-if(!heroTitle) return;
-
-currentSlide++;
-
-if(currentSlide>=heroSlides.length){
-
-currentSlide=0;
-
-}
-
-heroTitle.textContent=heroSlides[currentSlide].title;
-
-heroText.textContent=heroSlides[currentSlide].text;
-
-heroImage.src=heroSlides[currentSlide].image;
-
-}
-
-setInterval(changeHero,4000);
 
 /* ==========================================
    MOBILE MENU
