@@ -1,14 +1,18 @@
 [
   {
-    "id": 1,
-    "name": "Samsung Galaxy A36",
-    "category": "Mobiles",
-    "price": "Rs. 84,999",
-    "rating": "★★★★★",
-    "image": "images/a36.jpg",
-    "link": "https://your-affiliate-link.com",
-    "description": "6.7-inch AMOLED Display, 50MP Camera, 5000mAh Battery."
-  },
+    
+  "id": 1,
+  "name": "Wireless MIC K8/K9/K15/K35",
+  "category": "Audio",
+  "brand": "No Brand",
+  "price": "Rs.799",
+  "oldPrice": "Rs.1,398",
+  "discount": "43% OFF",
+  "rating": "★★★★★",
+  "image": "images/wireless-mic-k8.jpg",
+  "link": "https://s.daraz.pk/s.curOb?cc",
+  "description": "Wireless microphone compatible with Type-C, iOS, Android, USB and 3.5mm devices. Ideal for interviews, YouTube, TikTok, podcasts, vlogging and live streaming."
+}
   {
     "id": 2,
     "name": "Redmi Note 14",
