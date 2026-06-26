@@ -751,3 +751,141 @@ padding:16px;
 }
 
 }
+/* ===== PREMIUM HERO ===== */
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#4f46e5,#7c3aed);
+    padding:80px 20px;
+}
+
+.hero-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+}
+
+.hero-left{
+    flex:1;
+}
+
+.hero-right{
+    flex:1;
+    text-align:center;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:420px;
+    border-radius:25px;
+    background:#fff;
+    padding:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+.hero-badge{
+    display:inline-block;
+    background:#fff;
+    color:#2563eb;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero-left h1{
+    font-size:52px;
+    color:#fff;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-left p{
+    color:#eef2ff;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+}
+
+.btn-primary{
+    background:#ff7a00;
+    color:#fff;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn-secondary{
+    background:#fff;
+    color:#2563eb;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero-stats{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    background:rgba(255,255,255,.15);
+    padding:18px;
+    border-radius:15px;
+    text-align:center;
+    min-width:100px;
+    backdrop-filter:blur(8px);
+}
+
+.stat-box h2{
+    color:#fff;
+    margin:0;
+}
+
+.stat-box span{
+    color:#f8fafc;
+    font-size:14px;
+}
+
+/* ===== Mobile ===== */
+
+@media(max-width:768px){
+
+.hero-container{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-left h1{
+    font-size:34px;
+}
+
+.hero-left p{
+    font-size:16px;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.hero-stats{
+    justify-content:center;
+}
+
+.hero-right img{
+    max-width:280px;
+}
+
+   }
