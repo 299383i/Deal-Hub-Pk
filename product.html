@@ -1,1 +1,230 @@
-<h1>Product Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Product Details | Deal Hub PK</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="logo">
+
+🛒 Deal Hub PK
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="categories.html">Categories</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="product-page">
+
+<div class="container">
+
+<div class="product-layout">
+
+<div class="product-image">
+
+<img
+id="productImage"
+src="https://via.placeholder.com/600x600?text=Product"
+alt="Product">
+
+</div>
+
+<div class="product-info">
+
+<h1 id="productName">
+
+Loading...
+
+</h1>
+
+<div
+class="rating"
+id="productRating">
+
+★★★★★
+
+</div>
+
+<h2
+class="price"
+id="productPrice">
+
+Rs.0
+
+</h2>
+
+<p
+id="productDescription">
+
+Loading product details...
+
+</p>
+
+<a
+
+id="buyButton"
+
+href="#"
+
+target="_blank"
+
+class="buy-btn">
+
+🛒 Buy on Daraz
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="related-products">
+
+<div class="container">
+
+<h2>
+
+Related Products
+
+</h2>
+
+<div id="relatedProducts">
+
+<div class="card">
+
+<img src="https://via.placeholder.com/300x300?text=Related+Product" alt="Related Product">
+
+<div class="card-body">
+
+<h3 class="card-title">
+
+More Products Coming Soon
+
+</h3>
+
+<p class="price">
+
+Best Deals
+
+</p>
+
+<a href="index.html" class="buy-btn">
+
+View Products
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<h3>
+
+🛒 Deal Hub PK
+
+</h3>
+
+<p>
+
+Best Deals. Smart Shopping.
+
+</p>
+
+<p>
+
+Affiliate Disclosure: We may earn a commission when you purchase through our affiliate links.
+
+</p>
+
+<p>
+
+© 2026 Deal Hub PK. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const id = Number(params.get("id"));
+
+fetch("products.json")
+
+.then(response => response.json())
+
+.then(products => {
+
+const product = products.find(item => item.id === id);
+
+if(!product) return;
+
+document.getElementById("productName").textContent = product.name;
+
+document.getElementById("productPrice").textContent = product.price;
+
+document.getElementById("productRating").textContent = product.rating;
+
+document.getElementById("productDescription").textContent = product.description;
+
+document.getElementById("productImage").src = product.image;
+
+document.getElementById("buyButton").href = product.link;
+
+});
+
+</script>
+
+</body>
+
+  </html>
+  
