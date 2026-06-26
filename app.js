@@ -2,7 +2,7 @@
 // Deal Hub PK - Premium app.js
 // ======================================
 
-const productsContainer = document.getElementById("products");
+const productsContainer = document.getElementById("productsContainer");
 const searchBox = document.getElementById("searchBox");
 
 let allProducts = [];
